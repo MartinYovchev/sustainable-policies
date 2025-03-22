@@ -116,7 +116,7 @@
         border-radius: 2px;
       }
       .contact-number {
-        font-size: 32px;
+        font-size: 1.6rem;
         margin: 1.5rem 0;
         color: #2e3842;
         font-weight: 600;
@@ -155,7 +155,6 @@
     </style>
   </head>
   <body class="landing is-preload">
-    <!-- Contact Overlay -->
     <div class="contact-overlay" id="contactOverlay">
       <div class="contact-content">
         <span class="contact-close">&times;</span>
@@ -164,9 +163,7 @@
       </div>
     </div>
 
-    <!-- Основен контейнер на страницата -->
     <div id="page-wrapper">
-      <!-- Заглавна част -->
       <header id="header" class="alt">
         <h1>
           <a href="javascript:void(0)" data-section="home"
@@ -208,7 +205,6 @@
         </nav>
       </header>
 
-      <!-- Банер секция -->
       <section id="banner">
         <div class="inner">
           <h2>Център за Устойчиви Политики</h2>
@@ -233,7 +229,6 @@
         >
       </section>
 
-      <!-- Първа секция -->
       <section id="about" class="wrapper style1 special">
         <div class="inner">
           <header class="major">
@@ -244,36 +239,40 @@
               фокусирани върху устойчиво развитие и иновации.
             </p>
           </header>
-          <ul class="icons major">
-            <li>
-              <span class="icon fa-gem major style1"
-                ><span class="label">Инновации</span></span
-              >
-            </li>
-            <li>
-              <span class="icon fa-heart major style2"
-                ><span class="label">Устойчивост</span></span
-              >
-            </li>
-            <li>
-              <span class="icon solid fa-code major style3"
-                ><span class="label">Развитие</span></span
-              >
-            </li>
-          </ul>
+          <div
+            class="image"
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              max-width: 100%;
+            "
+          >
+            <img
+              src="images/logo_csp.png"
+              alt="Logo"
+              style="
+                max-width: 100%;
+                height: auto;
+                width: auto;
+                max-height: 250px;
+                object-fit: contain;
+                padding: 0;
+              "
+            />
+          </div>
         </div>
       </section>
 
-      <!-- Втора секция -->
       <section id="activities" class="wrapper alt style2">
         <section class="spotlight">
           <div class="image"><img src="images/pic01.jpg" alt="" /></div>
           <div class="content">
             <h2>Нашите цели</h2>
             <p>
-              Развитие на духовни ценности, гражданско общество и защита на
-              човешките права. Насърчаване на взаимодействието между НПО-тата,
-              държавата и бизнеса.
+              Насърчаване на научно-изследователската и развойна дейност,
+              развиване на предприемаческия потенциал, взаимодействието между
+              НПО сектора, държавата и бизнеса.
             </p>
           </div>
         </section>
@@ -292,14 +291,27 @@
           <div class="content">
             <h2>Нашият екип</h2>
             <p>
-              Учредител и управител адвокат Ивелина Пенева - експерт с богат
-              опит в областта на административното право и европейските фондове.
+              Екипът на сдружението притежава богат професионален опит в
+              областите:
             </p>
+            <ul class="actions fit stacked">
+              <li>
+                Изготвяне на анализи и проучвания в областта на разработване и
+                внедряване на иновации в МСП, подпомагане на предприемаческото
+                обучение, трансфера на знания и др.
+              </li>
+              <li>
+                Предоставяне на техническо, консултантско и експертно съдействие
+                на лица, които имат нужда от съдействие за осигуряване на достъп
+                до финансиране, оказване на помощ при подготовка на документи,
+                изисквани при кандидатстване за финансиране по проекти.
+              </li>
+              <li>Организиране и провеждане на обучения.</li>
+            </ul>
           </div>
         </section>
       </section>
 
-      <!-- Трета секция -->
       <section id="goals" class="wrapper style3 special">
         <div class="inner">
           <header class="major">
@@ -316,25 +328,28 @@
                 общество, защита на човешките права.
               </p>
             </li>
-            <li class="icon solid fa-laptop">
+            <li class="icon fa-heart">
               <h3>Сътрудничество</h3>
               <p>
-                Насърчаване на взаимодействието между НПО-тата, държавата и
-                бизнеса.
+                Стимулиране на сътрудничеството между неправителствени
+                организации, държавни институции и частния сектор.
               </p>
             </li>
-            <li class="icon solid fa-code">
+            <li class="icon solid fa-laptop">
               <h3>Иновации</h3>
               <p>
                 Насърчаване на научно-изследователската дейност и технологично
                 развитие.
               </p>
             </li>
-            <li class="icon solid fa-headphones-alt">
+            <li class="icon fa-flag">
               <h3>Образование</h3>
-              <p>Развитие на капацитети и обучение в различни области.</p>
+              <p>
+                Насърчаване на инвестициите в наука и образование, обучение и
+                подготовка на кадри за бизнеса.
+              </p>
             </li>
-            <li class="icon fa-heart">
+            <li class="icon fa-paper-plane">
               <h3>Предприемачество</h3>
               <p>
                 Подпомагане на малки и средни предприятия и предприемачество.
@@ -344,11 +359,24 @@
               <h3>Устойчивост</h3>
               <p>Насърчаване на ресурсната ефективност и зеления растеж.</p>
             </li>
+            <li class="icon fa-heart">
+              <h3>Околна среда</h3>
+              <p>
+                Опазване на околната среда и биоразнообразието, насърчаване на
+                действията за адаптация към изменението на климата.
+              </p>
+            </li>
+            <li class="icon solid fa-laptop">
+              <h3>Трансгранично сътрудничество</h3>
+              <p>
+                Насърчаване на устойчивото развитие на регионите и на
+                трансграничното сътрудничество.
+              </p>
+            </li>
           </ul>
         </div>
       </section>
 
-      <!-- Секция за призив за действие -->
       <section id="contact" class="wrapper style4 special">
         <div class="inner">
           <header class="major">
@@ -375,7 +403,6 @@
         </div>
       </section>
 
-      <!-- Долен колонтитул -->
       <footer id="footer">
         <ul class="icons">
           <li>
@@ -401,7 +428,6 @@
       </footer>
     </div>
 
-    <!-- Скриптове -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -409,11 +435,10 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="tarnslations.js"></script>
 
-    <!-- Плавно превъртане -->
     <script>
       $(document).ready(function () {
-        // Contact overlay functionality
         const contactOverlay = document.getElementById("contactOverlay");
         const contactButtons = document.querySelectorAll(
           "#contactButton, #contactButton2"
@@ -423,7 +448,7 @@
         function showContactOverlay() {
           contactOverlay.style.display = "flex";
           document.body.style.overflow = "hidden";
-          // Add visible class after a small delay to trigger animation
+
           setTimeout(() => {
             contactOverlay.classList.add("visible");
           }, 10);
@@ -434,7 +459,7 @@
           setTimeout(() => {
             contactOverlay.style.display = "none";
             document.body.style.overflow = "";
-          }, 300); // Match the transition duration
+          }, 300);
         }
 
         contactButtons.forEach((button) => {
@@ -449,150 +474,23 @@
           }
         });
 
-        // Remove /index.html from URL if present
         if (window.location.pathname.endsWith("index.html")) {
           window.history.replaceState({}, "", "/");
         }
 
-        // Съдържание на различните езици
-        const translations = {
-          bg: {
-            translation: "BG",
-            menu: "Меню",
-            home: "Начало",
-            about: "За нас",
-            activities: "Дейности",
-            goals: "Цели",
-            contact: "Контакти",
-            title: "Център за Устойчиви Политики",
-            mobileTitle: "Устойчиви Политики",
-            subtitle:
-              "Сдружение с нестопанска цел регистрирано на 1.11.2024 г. като ЮЛНЦ в обществена полза",
-            contactUs: "Свържете се с нас",
-            learnMore: "Научете повече",
-            aboutText:
-              "Сдружението е учредено от 7 физически лица за постигане на широк кръг от цели, фокусирани върху устойчиво развитие и иновации.",
-            ourGoals: "Нашите цели",
-            ourGoalsText:
-              "Развитие на духовни ценности, гражданско общество и защита на човешките права. Насърчаване на взаимодействието между НПО-тата, държавата и бизнеса.",
-            ourActivities: "Нашите дейности",
-            ourActivitiesText:
-              "Развитие на проекти, консултантски услуги, обучение и събития. Сътрудничество с организации в България и чужбина.",
-            ourTeam: "Нашият екип",
-            ourTeamText:
-              "Учредител и управител адвокат Ивелина Пенева - експерт с богат опит в областта на административното право и европейските фондове.",
-            mainGoals: "Основните ни цели",
-            focus:
-              "Фокус върху устойчиво развитие, иновации и социална отговорност",
-            address: "гр. Враца, ул. Христо Ботев № 115, вх. Е, ап. 85",
-            values: "Развитие на ценности",
-            valuesText:
-              "Развитие и утвърждаване на духовни ценности, гражданско общество, защита на човешките права.",
-            cooperation: "Сътрудничество",
-            cooperationText:
-              "Насърчаване на взаимодействието между НПО-тата, държавата и бизнеса.",
-            innovation: "Иновации",
-            innovationText:
-              "Насърчаване на научно-изследователската дейност и технологично развитие.",
-            education: "Образование",
-            educationText:
-              "Развитие на капацитети и обучение в различни области.",
-            entrepreneurship: "Предприемачество",
-            entrepreneurshipText:
-              "Подпомагане на малки и средни предприятия и предприемачество.",
-            sustainability: "Устойчивост",
-            sustainabilityText:
-              "Насърчаване на ресурсната ефективност и зеления растеж.",
-            copyright: "© Център за Устойчиви Политики",
-            innovationLabel: "Инновации",
-            sustainabilityLabel: "Устойчивост",
-            developmentLabel: "Развитие",
-            twitterLabel: "Twitter",
-            facebookLabel: "Facebook",
-            instagramLabel: "Instagram",
-            linkedinLabel: "LinkedIn",
-            emailLabel: "Имейл",
-            aboutHeading: "За нас",
-            contactOverlayTitle: "Свържете се с нас",
-          },
-          en: {
-            translation: "EN",
-            menu: "Menu",
-            home: "Home",
-            about: "About",
-            activities: "Activities",
-            goals: "Goals",
-            contact: "Contact",
-            title: "Center for Sustainable Policies",
-            mobileTitle: "Sustainable Policies",
-            subtitle:
-              "Non-profit organization registered on 1.11.2024 as a legal entity in public benefit",
-            contactUs: "Contact Us",
-            learnMore: "Learn More",
-            aboutText:
-              "The organization was founded by 7 individuals to achieve a wide range of goals focused on sustainable development and innovation.",
-            ourGoals: "Our Goals",
-            ourGoalsText:
-              "Development of spiritual values, civil society, and human rights protection. Encouraging interaction between NGOs, government, and business.",
-            ourActivities: "Our Activities",
-            ourActivitiesText:
-              "Development of projects, consulting services, training, and events. Cooperation with organizations in Bulgaria and abroad.",
-            ourTeam: "Our Team",
-            ourTeamText:
-              "Founder and manager Attorney Ivelina Peneva - expert with extensive experience in administrative law and European funds.",
-            mainGoals: "Our Main Goals",
-            focus:
-              "Focus on sustainable development, innovation, and social responsibility",
-            address: "115 Hristo Botev St., Entrance E, Apt. 85, Vratsa",
-            values: "Values Development",
-            valuesText:
-              "Development and establishment of spiritual values, civil society, human rights protection.",
-            cooperation: "Cooperation",
-            cooperationText:
-              "Encouraging interaction between NGOs, government, and business.",
-            innovation: "Innovation",
-            innovationText:
-              "Encouraging research activities and technological development.",
-            education: "Education",
-            educationText:
-              "Development of capacities and training in various fields.",
-            entrepreneurship: "Entrepreneurship",
-            entrepreneurshipText:
-              "Supporting small and medium enterprises and entrepreneurship.",
-            sustainability: "Sustainability",
-            sustainabilityText:
-              "Encouraging resource efficiency and green growth.",
-            copyright: "© Center for Sustainable Policies",
-            innovationLabel: "Innovation",
-            sustainabilityLabel: "Sustainability",
-            developmentLabel: "Development",
-            twitterLabel: "Twitter",
-            facebookLabel: "Facebook",
-            instagramLabel: "Instagram",
-            linkedinLabel: "LinkedIn",
-            emailLabel: "Email",
-            aboutHeading: "About Us",
-            contactOverlayTitle: "Contact Us",
-          },
-        };
-
         let currentLang = "bg";
 
-        // Функция за превключване на езика
         function toggleLanguage() {
           currentLang = currentLang === "bg" ? "en" : "bg";
           updateContent();
         }
 
-        // Функция за обновяване на съдържанието
         function updateContent() {
           const t = translations[currentLang];
           const isMobile = window.innerWidth <= 736;
 
-          // Обновяване на бутона за превключване на езика
           $("#langToggle").text(t.translation);
 
-          // Обновяване на менюто
           $(".menuToggle span").text(t.menu);
           $("#menu ul li:nth-child(1) a").text(t.home);
           $("#menu ul li:nth-child(2) a").text(t.about);
@@ -600,7 +498,6 @@
           $("#menu ul li:nth-child(4) a").text(t.goals);
           $("#menu ul li:nth-child(5) a").text(t.contact);
 
-          // Обновяване на заглавията и текстовете
           $("h1 a").text(isMobile ? t.mobileTitle : t.title);
           $("#banner h2").text(t.title);
           $("#banner p").html(t.subtitle.replace(/\n/g, "<br />"));
@@ -611,19 +508,25 @@
           $("#about .major h2").text(t.aboutHeading);
           $("#about .major p").text(t.aboutText);
 
-          // Обновяване на втората секция
           $("#activities .spotlight:nth-child(1) h2").text(t.ourGoals);
           $("#activities .spotlight:nth-child(1) p").text(t.ourGoalsText);
           $("#activities .spotlight:nth-child(2) h2").text(t.ourActivities);
           $("#activities .spotlight:nth-child(2) p").text(t.ourActivitiesText);
           $("#activities .spotlight:nth-child(3) h2").text(t.ourTeam);
           $("#activities .spotlight:nth-child(3) p").text(t.ourTeamText);
+          $("#activities .spotlight:nth-child(3) li:nth-child(1)").text(
+            t.servicesAnalysis
+          );
+          $("#activities .spotlight:nth-child(3) li:nth-child(2)").text(
+            t.servicesConsulting
+          );
+          $("#activities .spotlight:nth-child(3) li:nth-child(3)").text(
+            t.servicesTraining
+          );
 
-          // Обновяване на третата секция
           $("#goals .major h2").text(t.mainGoals);
           $("#goals .major p").text(t.focus);
 
-          // Обновяване на feature items
           $("#goals .features li:nth-child(1) h3").text(t.values);
           $("#goals .features li:nth-child(1) p").text(t.valuesText);
           $("#goals .features li:nth-child(2) h3").text(t.cooperation);
@@ -636,36 +539,37 @@
           $("#goals .features li:nth-child(5) p").text(t.entrepreneurshipText);
           $("#goals .features li:nth-child(6) h3").text(t.sustainability);
           $("#goals .features li:nth-child(6) p").text(t.sustainabilityText);
+          $("#goals .features li:nth-child(7) h3").text(t.environment);
+          $("#goals .features li:nth-child(7) p").text(t.environmentText);
+          $("#goals .features li:nth-child(8) h3").text(
+            t.crossBorderCooperation
+          );
+          $("#goals .features li:nth-child(8) p").text(
+            t.crossBorderCooperationText
+          );
 
-          // Обновяване на контакт секцията
           $("#contact header h2").text(t.contactUs);
           $("#contact header p").text(t.address);
           $("#contact .button.fit:not(.primary)").text(t.about);
 
-          // Обновяване на иконите в първата секция
           $("#about .icon.fa-gem .label").text(t.innovationLabel);
           $("#about .icon.fa-heart .label").text(t.sustainabilityLabel);
           $("#about .icon.fa-code .label").text(t.developmentLabel);
 
-          // Обновяване на социалните медии в долния колонтитул
           $(".icon.fa-twitter .label").text(t.twitterLabel);
           $(".icon.fa-facebook-f .label").text(t.facebookLabel);
           $(".icon.fa-instagram .label").text(t.instagramLabel);
           $(".icon.fa-linkedin .label").text(t.linkedinLabel);
           $(".icon.fa-envelope .label").text(t.emailLabel);
 
-          // Обновяване на copyright
           $(".copyright li").text(t.copyright);
 
-          // Обновяване на контакт overlay
           document.getElementById("contactOverlayTitle").textContent =
             t.contactOverlayTitle;
         }
 
-        // Слушател за бутона за превключване на езика
         $("#langToggle").on("click", toggleLanguage);
 
-        // Handle all navigation links
         document.querySelectorAll("a[data-section]").forEach((link) => {
           link.addEventListener("click", function (event) {
             event.preventDefault();
@@ -682,7 +586,6 @@
           });
         });
 
-        // Handle menu toggle separately
         document
           .querySelector(".menuToggle")
           .addEventListener("click", function (event) {
@@ -690,7 +593,6 @@
             document.getElementById("menu").classList.toggle("visible");
           });
 
-        // Затваряне на менюто след кликване върху връзка
         document.querySelectorAll("#menu a").forEach((link) => {
           link.addEventListener("click", function () {
             document.getElementById("menu").classList.remove("visible");
