@@ -9,150 +9,10 @@
     />
     <link rel="icon" type="image/svg+xml" href="images/logo_csp.svg" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="./additionalStyling.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
-    <style>
-      link[rel="icon"] {
-        filter: brightness(0) invert(1);
-        width: 32px;
-        height: 32px;
-      }
-      @media screen and (max-width: 736px) {
-        #header h1 {
-          display: none;
-        }
-        #langToggle {
-          padding: 0 0.4em;
-          font-size: 0.9em;
-          min-width: 2.2em;
-          height: 2.2em;
-          line-height: 2.2em;
-          margin-right: 0.5em;
-          border-radius: 4px;
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          transition: all 0.2s ease;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        #langToggle:hover {
-          background: rgba(255, 255, 255, 0.2);
-          transform: translateY(-1px);
-        }
-      }
-      .contact-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: 1000;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      .contact-overlay.visible {
-        opacity: 1;
-      }
-      .contact-content {
-        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-        padding: 2.5rem;
-        border-radius: 16px;
-        text-align: center;
-        position: relative;
-        max-width: 90%;
-        width: 400px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        transform: translateY(-20px);
-        transition: transform 0.3s ease;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      .contact-overlay.visible .contact-content {
-        transform: translateY(0);
-      }
-      .contact-close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        font-size: 28px;
-        cursor: pointer;
-        color: #666;
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        text-align: center;
-        border-radius: 50%;
-        transition: all 0.2s ease;
-        background: rgba(255, 255, 255, 0.8);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-      .contact-close:hover {
-        color: #e74c3c;
-        background-color: #fff;
-        transform: rotate(90deg);
-      }
-      .contact-content h2 {
-        color: #2e3842;
-        margin-bottom: 1.5rem;
-        font-size: 28px;
-        font-weight: 600;
-        position: relative;
-        padding-bottom: 15px;
-      }
-      .contact-content h2:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60px;
-        height: 3px;
-        background: linear-gradient(90deg, #3498db, #2ecc71);
-        border-radius: 2px;
-      }
-      .contact-number {
-        font-size: 1.6rem;
-        margin: 1.5rem 0;
-        color: #2e3842;
-        font-weight: 600;
-        letter-spacing: 1px;
-        padding: 15px 25px;
-        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        display: inline-block;
-        transition: all 0.3s ease;
-      }
-      .contact-number:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      }
-      .contact-content p {
-        color: #666;
-        font-size: 16px;
-        margin: 0;
-        line-height: 1.6;
-        padding: 10px 20px;
-        background: rgba(52, 152, 219, 0.1);
-        border-radius: 8px;
-        display: inline-block;
-      }
-      @media screen and (max-width: 480px) {
-        .contact-content {
-          padding: 2rem;
-          width: 85%;
-        }
-        .contact-number {
-          font-size: 28px;
-          padding: 12px 20px;
-        }
-      }
-    </style>
   </head>
   <body class="landing is-preload">
     <div class="contact-overlay" id="contactOverlay">
@@ -286,6 +146,7 @@
             </p>
           </div>
         </section>
+
         <section class="spotlight">
           <div class="image"><img src="images/pic03.jpg" alt="" /></div>
           <div class="content">
@@ -311,71 +172,67 @@
           </div>
         </section>
       </section>
-
-      <section id="goals" class="wrapper style3 special">
+</head>
+<body>
+    <section id="goals" class="wrapper style3 special goals-carousel">
         <div class="inner">
-          <header class="major">
-            <h2>Основните ни цели</h2>
-            <p>
-              Фокус върху устойчиво развитие, иновации и социална отговорност
-            </p>
-          </header>
-          <ul class="features">
-            <li class="icon fa-paper-plane">
-              <h3>Развитие на ценности</h3>
-              <p>
-                Развитие и утвърждаване на духовни ценности, гражданско
-                общество, защита на човешките права.
-              </p>
-            </li>
-            <li class="icon fa-heart">
-              <h3>Сътрудничество</h3>
-              <p>
-                Стимулиране на сътрудничеството между неправителствени
-                организации, държавни институции и частния сектор.
-              </p>
-            </li>
-            <li class="icon solid fa-laptop">
-              <h3>Иновации</h3>
-              <p>
-                Насърчаване на научно-изследователската дейност и технологично
-                развитие.
-              </p>
-            </li>
-            <li class="icon fa-flag">
-              <h3>Образование</h3>
-              <p>
-                Насърчаване на инвестициите в наука и образование, обучение и
-                подготовка на кадри за бизнеса.
-              </p>
-            </li>
-            <li class="icon fa-paper-plane">
-              <h3>Предприемачество</h3>
-              <p>
-                Подпомагане на малки и средни предприятия и предприемачество.
-              </p>
-            </li>
-            <li class="icon fa-flag">
-              <h3>Устойчивост</h3>
-              <p>Насърчаване на ресурсната ефективност и зеления растеж.</p>
-            </li>
-            <li class="icon fa-heart">
-              <h3>Околна среда</h3>
-              <p>
-                Опазване на околната среда и биоразнообразието, насърчаване на
-                действията за адаптация към изменението на климата.
-              </p>
-            </li>
-            <li class="icon solid fa-laptop">
-              <h3>Трансгранично сътрудничество</h3>
-              <p>
-                Насърчаване на устойчивото развитие на регионите и на
-                трансграничното сътрудничество.
-              </p>
-            </li>
-          </ul>
+            <header class="major">
+                <h2>Основните ни цели</h2>
+                <p>Фокус върху устойчиво развитие, иновации и социална отговорност</p>
+            </header>
+
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-content">
+                        <div class="goals-group">
+                            <li class="icon fa-paper-plane">
+                                <h3>Развитие на ценности</h3>
+                                <p>Развитие и утвърждаване на духовни ценности, гражданско общество, защита на човешките права.</p>
+                            </li>
+                            <li class="icon fa-heart">
+                                <h3>Сътрудничество</h3>
+                                <p>Стимулиране на сътрудничеството между неправителствени организации, държавни институции и частния сектор.</p>
+                            </li>
+                            <li class="icon solid fa-laptop">
+                                <h3>Иновации</h3>
+                                <p>Насърчаване на научно-изследователската дейност и технологично развитие.</p>
+                            </li>
+                        </div>
+                        <div class="goals-group">
+                            <li class="icon fa-flag">
+                                <h3>Образование</h3>
+                                <p>Насърчаване на инвестициите в наука и образование, обучение и подготовка на кадри за бизнеса.</p>
+                            </li>
+                            <li class="icon fa-paper-plane">
+                                <h3>Предприемачество</h3>
+                                <p>Подпомагане на малки и средни предприятия и предприемачество.</p>
+                            </li>
+                            <li class="icon fa-flag">
+                                <h3>Устойчивост</h3>
+                                <p>Насърчаване на ресурсната ефективност и зеления растеж.</p>
+                            </li>
+                        </div>
+                        <div class="goals-group">
+                            <li class="icon fa-heart">
+                                <h3>Околна среда</h3>
+                                <p>Опазване на околната среда и биоразнообразието, насърчаване на действията за адаптация към изменението на климата.</p>
+                            </li>
+                            <li class="icon solid fa-laptop">
+                                <h3>Трансгранично сътрудничество</h3>
+                                <p>Насърчаване на устойчивото развитие на регионите и на трансграничното сътрудничество.</p>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
         </div>
-      </section>
+    </section>
 
       <section id="contact" class="wrapper style4 special">
         <div class="inner">
@@ -415,7 +272,7 @@
           </li>
           <li>
             <a
-              href="mailto:info@sustainablepolicies.bg"
+              href="mailto:info.sustainable.politics@gmail.com"
               class="icon solid fa-envelope"
               title="info@sustainablepolicies.bg"
               ><span class="label">Email</span></a
@@ -527,26 +384,29 @@
           $("#goals .major h2").text(t.mainGoals);
           $("#goals .major p").text(t.focus);
 
-          $("#goals .features li:nth-child(1) h3").text(t.values);
-          $("#goals .features li:nth-child(1) p").text(t.valuesText);
-          $("#goals .features li:nth-child(2) h3").text(t.cooperation);
-          $("#goals .features li:nth-child(2) p").text(t.cooperationText);
-          $("#goals .features li:nth-child(3) h3").text(t.innovation);
-          $("#goals .features li:nth-child(3) p").text(t.innovationText);
-          $("#goals .features li:nth-child(4) h3").text(t.education);
-          $("#goals .features li:nth-child(4) p").text(t.educationText);
-          $("#goals .features li:nth-child(5) h3").text(t.entrepreneurship);
-          $("#goals .features li:nth-child(5) p").text(t.entrepreneurshipText);
-          $("#goals .features li:nth-child(6) h3").text(t.sustainability);
-          $("#goals .features li:nth-child(6) p").text(t.sustainabilityText);
-          $("#goals .features li:nth-child(7) h3").text(t.environment);
-          $("#goals .features li:nth-child(7) p").text(t.environmentText);
-          $("#goals .features li:nth-child(8) h3").text(
-            t.crossBorderCooperation
-          );
-          $("#goals .features li:nth-child(8) p").text(
-            t.crossBorderCooperationText
-          );
+          $("#goals .goals-group li:nth-child(1) h3").text(t.values);
+          $("#goals .goals-group li:nth-child(1) p").text(t.valuesText);
+          
+          $("#goals .goals-group li:nth-child(2) h3").text(t.cooperation);
+          $("#goals .goals-group li:nth-child(2) p").text(t.cooperationText);
+          
+          $("#goals .goals-group li:nth-child(3) h3").text(t.innovation);
+          $("#goals .goals-group li:nth-child(3) p").text(t.innovationText);
+          
+          $("#goals .goals-group:nth-child(2) li:nth-child(1) h3").text(t.education);
+          $("#goals .goals-group:nth-child(2) li:nth-child(1) p").text(t.educationText);
+          
+          $("#goals .goals-group:nth-child(2) li:nth-child(2) h3").text(t.entrepreneurship);
+          $("#goals .goals-group:nth-child(2) li:nth-child(2) p").text(t.entrepreneurshipText);
+          
+          $("#goals .goals-group:nth-child(2) li:nth-child(3) h3").text(t.sustainability);
+          $("#goals .goals-group:nth-child(2) li:nth-child(3) p").text(t.sustainabilityText);
+          
+          $("#goals .goals-group:nth-child(3) li:nth-child(1) h3").text(t.environment);
+          $("#goals .goals-group:nth-child(3) li:nth-child(1) p").text(t.environmentText);
+          
+          $("#goals .goals-group:nth-child(3) li:nth-child(2) h3").text(t.crossBorderCooperation);
+          $("#goals .goals-group:nth-child(3) li:nth-child(2) p").text(t.crossBorderCooperationText);
 
           $("#contact header h2").text(t.contactUs);
           $("#contact header p").text(t.address);
@@ -599,6 +459,57 @@
           });
         });
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".goals-carousel .carousel-content");
+        const dots = document.querySelectorAll(".carousel-dots .dot");
+        const groups = document.querySelectorAll(".goals-group");
+        let currentIndex = 0;
+        let autoSlideInterval;
+
+        function updateCarousel() {
+            const isMobile = window.innerWidth <= 768;
+            const maxSlides = groups.length;
+
+            if (isMobile) {
+                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+            } else {
+                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            dots.forEach((dot, index) => {
+                dot.classList.toggle("active", index === currentIndex);
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % groups.length;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + groups.length) % groups.length;
+            updateCarousel();
+        }
+
+        function startAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(nextSlide, 5000000);
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                currentIndex = index;
+                updateCarousel();
+                startAutoSlide();
+            });
+        });
+
+        window.addEventListener("resize", updateCarousel);
+
+        updateCarousel();
+        startAutoSlide();
+    });
     </script>
   </body>
 </html>
