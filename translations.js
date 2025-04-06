@@ -67,6 +67,11 @@ const translations = {
     servicesConsulting:
       "Предоставяне на техническо, консултантско и експертно съдействие на лица, които имат нужда от съдействие за осигуряване на достъп до финансиране, оказване на помощ при подготовка на документи, изисквани при кандидатстване за финансиране по проекти.",
     servicesTraining: "Организиране и провеждане на обучения.",
+    "about.title": "За нас",
+    "about.description":
+      "Центърът за устойчиви политики е създаден през 2024 г. като сдружение с нестопанска цел в обществена полза. Нашата мисия е да насърчаваме развитието на устойчиви политики във всички сфери на обществения живот.",
+    "about.values":
+      "Сдружението е учредено от 7 физически лица за постигане на широк кръг от цели, фокусирани върху устойчиво развитие и иновации.",
   },
   en: {
     translation: "EN",
@@ -136,5 +141,13 @@ const translations = {
     servicesConsulting:
       "Providing technical, consulting, and expert assistance to individuals in need of support for access to funding, helping with the preparation of documents required for project funding applications.",
     servicesTraining: "Organizing and conducting training sessions.",
+    "about.title": "About Us",
+    "about.description":
+      "The Center for Sustainable Policies was established in 2024 as a non-profit organization working for public benefit. Our mission is to promote the development of sustainable policies in all areas of public life.",
+    "about.values":
+      "The organization was founded by 7 individuals to achieve a wide range of goals focused on sustainable development and innovation.",
   },
 };
+
+// Add to window object to ensure global availability
+window.translations = translations;

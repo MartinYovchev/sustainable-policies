@@ -1,34 +1,4 @@
-link[rel="icon"] {
-  filter: brightness(0) invert(1);
-  width: 32px;
-  height: 32px;
-}
-
-@media screen and (max-width: 736px) {
-  #header h1 {
-    display: none;
-  }
-  #langToggle {
-    padding: 0 0.4em;
-    font-size: 0.9em;
-    min-width: 2.2em;
-    height: 2.2em;
-    line-height: 2.2em;
-    margin-right: 0.5em;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #langToggle:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-1px);
-  }
-}
-
+/* Contact Overlay Component Styles */
 .contact-overlay {
   display: none;
   position: fixed;
@@ -145,87 +115,9 @@ link[rel="icon"] {
     padding: 2rem;
     width: 85%;
   }
+
   .contact-number {
-    font-size: 28px;
+    font-size: 1.4rem;
     padding: 12px 20px;
-  }
-}
-
-/* Carousel */
-.goals-carousel .carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.goals-carousel .carousel-wrapper {
-  width: 100%;
-  overflow: hidden;
-}
-
-.goals-carousel .carousel-content {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.goals-carousel .goals-group {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.goals-carousel .carousel-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.goals-carousel .dot {
-  height: 10px;
-  width: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.goals-carousel .dot.active {
-  background-color: #717171;
-}
-.goals-group li::before {
-  padding-top: 2rem;
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.goals-group li h3 {
-  margin-top: 10px;
-  font-size: 1.3rem;
-}
-
-.goals-group li p {
-  font-size: 1rem;
-  text-align: center;
-}
-.goals-carousel li {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-  list-style-type: none;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-  background: #494c87;
-}
-
-@media screen and (max-width: 768px) {
-  .goals-carousel .goals-group {
-    flex-direction: column;
-    align-items: center;
   }
 }
