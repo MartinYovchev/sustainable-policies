@@ -7,6 +7,7 @@ const translations = {
     activities: "Дейности",
     goals: "Цели",
     contact: "Контакти",
+    news: "Новини",
     title: "Център за Устойчиви Политики",
     mobileTitle: "Устойчиви Политики",
     subtitle:
@@ -72,6 +73,7 @@ const translations = {
       "Центърът за устойчиви политики е създаден през 2024 г. като сдружение с нестопанска цел в обществена полза. Нашата мисия е да насърчаваме развитието на устойчиви политики във всички сфери на обществения живот.",
     "about.values":
       "Сдружението е учредено от 7 физически лица за постигане на широк кръг от цели, фокусирани върху устойчиво развитие и иновации.",
+    "footer.back": "Назад към сайта",
   },
   en: {
     translation: "EN",
@@ -81,6 +83,7 @@ const translations = {
     activities: "Activities",
     goals: "Goals",
     contact: "Contact",
+    news: "News",
     title: "Center for Sustainable Policies",
     mobileTitle: "Sustainable Policies",
     subtitle:
@@ -146,6 +149,7 @@ const translations = {
       "The Center for Sustainable Policies was established in 2024 as a non-profit organization working for public benefit. Our mission is to promote the development of sustainable policies in all areas of public life.",
     "about.values":
       "The organization was founded by 7 individuals to achieve a wide range of goals focused on sustainable development and innovation.",
+    "footer.back": "Back to the website",
   },
 };
 
